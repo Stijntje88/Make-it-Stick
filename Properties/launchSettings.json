@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "MsixPackage": {
+      "commandName": "MsixPackage",
+      "launchBrowser": false,
+      "applicationId": "Make_it_stick_123456!App",
+      "storeAppId": "",
+      "arguments": ""
+    }
+  }
+}
