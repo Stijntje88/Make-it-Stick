@@ -8,7 +8,7 @@ namespace Make_it_stick.Data
 {
     public class Teacher
     {
-        public int TeacherId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Role { get; set; }
         public string CurioEmail { get; set; }

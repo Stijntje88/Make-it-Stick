@@ -4,7 +4,7 @@ namespace Make_it_stick.Data
 {
     public class Questions
     {
-        public int QuestionId { get; set; }
+        public int Id { get; set; }
 
         public int quiz_Id { get; set; }
 

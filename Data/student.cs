@@ -8,7 +8,7 @@ namespace Make_it_stick.Data
 {
     public class Student
     {
-        public int StudentId { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Class { get; set; }
         public string StudentNumber { get; set; }

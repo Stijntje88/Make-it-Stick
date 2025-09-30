@@ -8,6 +8,7 @@ namespace Make_it_stick.Data
 {
     internal class notification
     {
+        public int Id { get; set; }
         public int PushId {  get; set; }
         public int StudentId { get; set; }
         public int QuizId { get; set; }

@@ -36,7 +36,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<Student>().HasData(
                 new Student
                 {
-                    StudentId = 1,
+                    Id = 1,
                     Name = "Alice Johnson",
                     Class = "ICT-01",
                     StudentNumber = "S12345",
@@ -45,7 +45,7 @@ namespace Make_it_stick.Data
                 },
                 new Student
                 {
-                    StudentId = 2,
+                    Id = 2,
                     Name = "Bob Smith",
                     Class = "ICT-02",
                     StudentNumber = "S67890",
@@ -57,7 +57,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<Teacher>().HasData(
                 new Teacher
                 {
-                    TeacherId = 1,
+                    Id = 1,
                     Name = "Mr. Peters",
                     Role = "Math Teacher",
                     CurioEmail = "peters@curio.nl",
@@ -65,7 +65,7 @@ namespace Make_it_stick.Data
                 },
                 new Teacher
                 {
-                    TeacherId = 2,
+                    Id = 2,
                     Name = "Ms. Van Dijk",
                     Role = "Programming Teacher",
                     CurioEmail = "vandijk@curio.nl",
@@ -76,7 +76,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<WeeklyChallenge>().HasData(
                 new WeeklyChallenge
                 {
-                    ChallengeId = 1,
+                    Id = 1,
                     TeacherId = 2, 
                     Title = "C# Basics",
                     Description = "Write a simple calculator in C#.",
@@ -86,7 +86,7 @@ namespace Make_it_stick.Data
                 },
                 new WeeklyChallenge
                 {
-                    ChallengeId = 2,
+                    Id = 2,
                     TeacherId = 1,
                     Title = "Algebra Challenge",
                     Description = "Solve 10 algebra problems.",
@@ -99,7 +99,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<Quiz>().HasData(
                 new Quiz 
                 { 
-                    QuizId = 1,
+                    Id = 1,
                     TeacherId = 2,
                     Title = "C# Quiz",
                     Description = "Test your C# basics.",
@@ -112,7 +112,7 @@ namespace Make_it_stick.Data
 
                 new Quiz 
                 { 
-                    QuizId = 2,
+                    Id = 2,
                     TeacherId = 1,
                     Title = "Math Quiz",
                     Description = "Basic algebra quiz.",
@@ -127,7 +127,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<Questions>().HasData(
                 new Questions 
                 { 
-                    QuestionId = 1,
+                    Id = 1,
                     quiz_Id = 1,
                     Question_Text = "What is the output of 2+2 in C#?",
                     Type = "MCQ",
@@ -136,7 +136,7 @@ namespace Make_it_stick.Data
                 },
                 new Questions 
                 { 
-                    QuestionId = 2,
+                    Id = 2,
                     quiz_Id = 2,
                     Question_Text = "Solve: 5x = 20",
                     Type = "Short Answer",
@@ -148,7 +148,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<Answers>().HasData(
                 new Answers 
                 { 
-                    AnswerId = 1,
+                    Id = 1,
                     StudentId = 1,
                     QuestionsuestionId = 1,
                     Question_Text = "What is 2+2?",
@@ -158,7 +158,7 @@ namespace Make_it_stick.Data
 
                 new Answers 
                 { 
-                    AnswerId = 2,
+                    Id = 2,
                     StudentId = 2,
                     QuestionsuestionId = 2,
                     Question_Text = "Solve 5x = 20",
@@ -170,7 +170,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<feedback>().HasData(
                 new feedback 
                 {
-                    FeedBackId = 1,
+                    Id = 1,
                     TeacherId = 2,
                     StudentId = 1,
                     QuizId = 1,
@@ -182,7 +182,7 @@ namespace Make_it_stick.Data
 
                 new feedback 
                 {
-                    FeedBackId = 2,
+                    Id = 2,
                     TeacherId = 1,
                     StudentId = 2,
                     QuizId = 2,
@@ -196,7 +196,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<leaderboard>().HasData(
                 new leaderboard 
                 {
-                    LeaderboardId = 1,
+                    Id = 1,
                     QuizId = 1,
                     ChallengeId = 1,
                     StudentId = 1,
@@ -207,7 +207,7 @@ namespace Make_it_stick.Data
 
                 new leaderboard 
                 {
-                    LeaderboardId = 2,
+                    Id = 2,
                     QuizId = 2,
                     ChallengeId = 2,
                     StudentId = 2,
@@ -220,6 +220,7 @@ namespace Make_it_stick.Data
             modelBuilder.Entity<notification>().HasData(
                 new notification 
                 {
+                    Id = 1,
                     PushId = 1,
                     StudentId = 1,
                     QuizId = 1,
@@ -230,6 +231,7 @@ namespace Make_it_stick.Data
 
                 new notification 
                 {
+                    Id = 2,
                     PushId = 2,
                     StudentId = 2,
                     QuizId = 2,

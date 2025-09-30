@@ -8,7 +8,8 @@ namespace Make_it_stick.Data
 {
     public class Answers
     {
-        public int AnswerId { get; set; }
+        public int Id { get; set; }
+        
 
         public int StudentId { get; set; }
 

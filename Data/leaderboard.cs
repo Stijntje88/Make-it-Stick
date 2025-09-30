@@ -8,7 +8,7 @@ namespace Make_it_stick.Data
 {
     internal class leaderboard
     {
-        public int LeaderboardId { get; set; }
+        public int Id { get; set; }
         public int QuizId { get; set; }
         public int ChallengeId { get; set; }
         public int StudentId { get; set; }

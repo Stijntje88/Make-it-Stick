@@ -8,7 +8,7 @@ namespace Make_it_stick.Data
 {
     public class Quiz
     {
-        public int QuizId { get; set; }
+        public int Id { get; set; }
         public int TeacherId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

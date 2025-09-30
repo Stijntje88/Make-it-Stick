@@ -8,7 +8,7 @@ namespace Make_it_stick.Data
 {
     internal class feedback
     {
-        public int FeedBackId {  get; set; }
+        public int Id {  get; set; }
         public int TeacherId { get; set; }
         public int StudentId { get; set; }
         public int QuizId { get; set; }
