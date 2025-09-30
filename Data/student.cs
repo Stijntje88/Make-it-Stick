@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Make_it_stick.models
+namespace Make_it_stick.Data
 {
     public class Student
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Make_it_stick.models
+namespace Make_it_stick.Data
 {
     public class Questions
     {
